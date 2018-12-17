@@ -1,0 +1,73 @@
+MIF/HEX Update report for sc_computer
+Mon Dec 17 16:20:19 2018
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Mon Dec 17 16:20:19 2018 ;
+; Revision Name         ; sc_computer                           ;
+; Top-level Entity Name ; calcutator                            ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CSEMA5F31C6                          ;
++-----------------------+---------------------------------------+
+
+
++--------------------------------------------------+
+; MIF/HEX Update Processed Files                   ;
++--------------------------------------------------+
+; File Name                                        ;
++--------------------------------------------------+
+; C:/altera/13.1/sc_computer/sc_datamem.hex        ;
+; C:/altera/13.1/sc_computer/simple_calcurator.hex ;
++--------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Mon Dec 17 16:20:03 2018
+Info: Command: quartus_cdb sc_computer -c sc_computer --update_mif
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/altera/13.1/sc_computer/sc_datamem.hex
+    Info (39025): Processed Memory Initialization File C:/altera/13.1/sc_computer/simple_calcurator.hex
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Mon Dec 17 16:20:19 2018
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
+
+
