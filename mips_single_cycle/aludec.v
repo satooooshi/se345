@@ -47,6 +47,7 @@ module aludec(input  logic [5:0] funct,
       4'b0100: alucontrol <= 5'b00001;  //or (for ori)
       4'b0101: alucontrol <= 5'b00000; //and (for andi)
       4'b0111: alucontrol <= 5'b00101;//xor (for xori)
+      4'b1000: alucontrol <= 5'bxxxxx;//jr
       default: case(funct)          // R-type instructions
           6'b100000: alucontrol <= 5'b00010; // add
           6'b100010: alucontrol <= 5'b00110; // sub
@@ -58,6 +59,7 @@ module aludec(input  logic [5:0] funct,
           6'b000000: alucontrol <= 5'b01110;//sll
           6'b000010: alucontrol <= 5'b01000;//srl
           6'b000011: alucontrol <= 5'b11001;//sra
+          //6'b001000: alucontrol <= 5'b11100;//jr
           default:   alucontrol <= 5'bxxxxx; // ???
         endcase
     endcase

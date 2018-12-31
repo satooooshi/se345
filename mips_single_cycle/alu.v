@@ -17,7 +17,7 @@ module alu(input logic [31:0] a, b,
 			5'b01110: aluout = ( b << shamt); //SLL: rd <- (rt << sa)
 			5'b01000: aluout = ( b >> shamt ); //SRL: rd <- (rt >> sa) (logical)
 			5'b11001: aluout = $signed(b) >>> shamt; //SRA: rd <- (rt >> sa) (arithmetic)
-
+			//5'b11100: aluout = a;//jr
 			5'b00011: aluout = b << 16; //LUI: imm << 16bit
 			//my impl. end
 			default: aluout = 0;

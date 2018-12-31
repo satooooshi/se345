@@ -5,8 +5,10 @@ module mips(input  logic        clk, reset,
             output logic [31:0] aluout, writedata,
             input  logic [31:0] readdata);
 
-  logic       memtoreg, alusrc, regdst, 
-              regwrite, jump, pcsrc, zero;
+  logic       alusrc, regwrite, pcsrc, zero;
+  logic [1:0] memtoreg;
+  logic [1:0] regdst;
+  logic [1:0] jump;
   logic [4:0] alucontrol;
 
   controller c(instr[31:26], instr[5:0], zero,

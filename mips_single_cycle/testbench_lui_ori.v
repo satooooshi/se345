@@ -1,13 +1,16 @@
+//mips assembler
+//http://www.kurtm.net/mipsasm/index.cgi
+
 module testbench_lui_ori();
 
   logic        clk;
   logic        reset;
 
-  logic [31:0] writedata, dataadr;
+  logic [31:0] writedata, dataadr, pc, instr;
   logic        memwrite;
 
   // instantiate device to be tested
-  top dut(clk, reset, writedata, dataadr, memwrite);
+  top dut(clk, reset, writedata, dataadr, pc, instr, memwrite);
   
   // initialize test
   initial
@@ -25,7 +28,7 @@ module testbench_lui_ori();
   always @(negedge clk)
     begin
       if(memwrite) begin
-        if(dataadr === 84 & writedata === 0) begin
+        if(dataadr === 84 & writedata === 7) begin
           $display("Single cycle mips : Simulation succeeded");
           $stop;
         end else if (dataadr !== 80) begin
