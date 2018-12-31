@@ -73,3 +73,4 @@ set_global_assignment -name VERILOG_FILE maindec.v
 set_global_assignment -name VERILOG_FILE mux2.v
 set_global_assignment -name VERILOG_FILE regfile.v
 set_global_assignment -name VERILOG_FILE signext.v
+set_global_assignment -name HEX_FILE sc_instmem.hex
