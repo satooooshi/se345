@@ -1,9 +1,10 @@
-module imem(input logic [5:0] a, output logic [31:0] rd);
+module imem(input  logic [5:0] a,
+            output logic [31:0] rd);
 
-    logic [31:0] RAM[63:0];
+  logic [31:0] RAM[63:0];
 
-    initial
-        $readmemh("memfile.dat", RAM);
+  initial
+      $readmemh("memfile_test_bne.dat",RAM);
 
-        assign rd=RAM[a];//word aligend
+  assign rd = RAM[a]; // word aligned
 endmodule
